@@ -27,6 +27,9 @@ img {
 .text-white {
     color: #fff;
 }
+.padding-x-space {
+    padding: 1.5rem;
+}
 
 /* 見出し */
 .font-english {
@@ -101,7 +104,11 @@ img {
     align-items: center;
     padding-bottom: 3rem;
 }
-.section-title {
+body section:last-child {
+    border-bottom: none;
+}
+.section-title,
+.footer-title {
     font-size: 2rem;
     margin-bottom: 1rem;
 }
@@ -120,3 +127,18 @@ img {
 
 /* footer
 ============================*/
+.page-footer {
+    background-color:  #235180;
+    padding: 1rem;
+}
+.info {
+    width: 100%;
+    max-width: 544px; /* 最大幅の指定 */
+    margin: auto; /* テーブルを中央表示する */
+    padding: 0 1.5rem;
+    border-spacing: 0; /* 1行ごとに１本の線を引く指定 */
+}
+.info th,
+.info td {
+    border-bottom: 1px solid #c9c2bc;
+}
