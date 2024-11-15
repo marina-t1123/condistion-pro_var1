@@ -1,0 +1,122 @@
+@charset "UTF-8"; /* 文字化けを防ぐ */
+
+/* ①共通部分(まずはここから設定する)
+============================*/
+html {
+    font-size: 100%; /* ブラウザーのデフォルトの文字サイズ・ユーザーが設定した文字サイズを正しく反映 */
+}
+body {
+    font-family: "Hiragino Kaku Gothic ProN", "Hiragino Sans", "BIZ UDPGothic", sans-serif; /*　サイト全体の書式指定 */
+    line-height: 1.7; /* 行の高さの指定 */
+    color: #432; /* 色の指定 */
+}
+a {
+    text-decoration: none; /* aタグの傍線の指定 */
+}
+img {
+    max-width: 100%; /* 画像の大きさの指定。こうすることで、画像が親要素よりも大きくならないようにしている。 */
+}
+
+/* レイアウト（他の部分でも共通して使い回せるように、共通クラスとして設定する） */
+.align-center {
+    text-align: center; /*　ロゴを指定しているh1タグ（親要素）に対して、中央に表示をしたいので指定　*/
+}
+.bg-coler-or {
+    background: #FFBD58;
+}
+.text-white {
+    color: #fff;
+}
+
+/* 見出し */
+.font-english {
+    font-family: 'Philosopher', sans-serif; /*　ナビメニューの書籍設定 */
+    font-weight: normal; /* ナビメニューの文字の太さ */
+}
+
+/* btn
+====================================*/
+.btn {
+    padding: 1rem 2rem;
+    margin: 2rem auto;
+    color: #fff;
+    border-radius: 8px;
+    transition: .5s; /* ボタンの背景色を0.5秒かけて、変化させる指定 */
+    /* transitionプロパティは、関連プロパティを一気に指定できるプロパティ。
+    最低でも、transition-duration(アニメーションにかかる時間)は指定しないとだめ。　*/
+}
+.btn-orn {
+    background-color: #FFBD58;
+}
+.btn-orn:hover {
+    background-color: #edaf53;
+}
+.btn-blue {
+    background-color: #235180;
+}
+.btn-blue:hover {
+    background-color: #1a3d60;
+}
+
+/* header 
+================================*/
+.page-header {
+    padding-top: .5rem;
+}
+.page-title {
+    padding-top: 2rem;
+    margin: auto;
+    color: #FFBD58;
+    width: 80%;
+}
+.logo {
+    width: 300px; /* ロゴの横幅*/
+}
+.main-nav { /* navタグ配下のulタグ　*/
+    display: flex; /* ul（親要素）配下のliタグ（子要素）を横並びにしている */
+    justify-content: center; /* li(子要素)に対して、中央表示になるように指定 */
+    gap: 2.5rem; /* flexboxの子要素同士の余白の設定。 rem=HTMLの最上位要素であるhtmlタグの文字サイズを基準に文字サイズが設定される */
+    padding: 0 1rem 1rem 1rem;
+    font-size: 1.4rem; /* ナビメニューも文字サイズ。*/
+    list-style: none; /* リストのデフォルトデザインの・などの装飾を無効化 */
+}
+.main-nav a {
+    color: #545454;
+}
+.main-nav a:hover {
+    color: #FFBD58;
+}
+
+/* Section
+================================*/
+.section-wrap {
+    max-width: 736px;
+    width: 80%;
+    padding: 1rem 0 3rem 0;
+    margin: 1rem auto;
+    border-bottom: 2px solid #235180;
+}
+.section-box{
+    display: flex;
+    align-items: center;
+    padding-bottom: 3rem;
+}
+.section-title {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+.section-text,
+.section-box_text { /* このセレクタでは、sectionタグの通常のテキストとグループでのテキストとの共有のスタイルをまとめて指定　*/
+    justify-content: center; /* 水平方向での揃え */
+}
+.section-box_text {
+    text-align: left;
+    padding: 0 2rem; 
+}
+.section-icon {
+    width: 15%;
+    margin: 1rem;
+}
+
+/* footer
+============================*/

@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="ja">
+    <head>
+        <meta charset="UTF-8">
+        <title>Conditon Pro</title>
+        <meta name="description" content="アスリートの体調管理に関連するデータ・トレーニングに関するデータの管理、分析を行うサービスです。">
+        <!-- 1-1 meta[charset="UTF-8"]^title{Conditon Pro}^meta[name="description" content="アスリートの体調管理に関連するデータ・トレーニングに関するデータの管理、分析を行うサービスです。"] -->
+        
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <!-- 1-5 meta[name="viewport" content="width=device-width, initial-scale=1"] -->
+        <!-- viewport=様々なデバイスにおける表示領域のこと。デバイスの大きさに合わせて文字が大きくなりみやすくなる。 -->
+
+    <!-- リセットCSS -->
+        <link rel="stylesheet" href="https://unpkg.com/ress/dist/ress.min.css">
+        <!-- 1-2 link[rel=stylesheet href="https://unpkg.com/ress/dist/ress.min.css"]  -->
+    <!-- Google Font -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+        <!-- 1-3 以下のサイトで、自分の使いたいGoogleフォントのコードをコピーしてくる。 -->
+        <!-- https://fonts.google.com/ -->
+    <!-- オリジナルCSS -->
+    <link rel="stylesheet" href="css/style.css">
+    <!-- 1-4 link[rel="stylesheet" href="css/style.css"] -->
+    </head>
+
+    <body>
+        <!-- 2-1 headerの作成 -->
+        <header class="page-header">
+            <!-- 2-2 サービスロゴを左端に設置 -->
+            <h1 class="align-center">
+                <a href="top.html"><img src="image/logo.png" alt="ConditionProホームページ" class="logo"></a>
+            </h1>
+            <!-- 2-3 ナビメニューの作成 -->
+            <nav>
+                <ul class="main-nav font-english">
+                    <li><a href="Athlete/login.html">Athlete</a></li>
+                    <li><a href="Trainer/login.html">Trainer</a></li>
+                </ul>
+            </nav>
+            <!-- nav>ul.main-nav.font-english>li*3>a[href=""] -->
+        </header>
+        <img src="image/top-image.png" alt="トップ画像">
+        <!-- 3 コンテンツの作成 -->
+        <!-- about -->
+        <section class="section-wrap align-center">
+            <h3 class="section-title">About</h3>
+            <p class="section-text">アスリートの体調管理・トレーニング関連のデータの管理、分析を行うサービスです。</p>
+        </section>
+        <!-- Feature -->
+        <section class="section-wrap">
+            <h3 class="section-title align-center">Feature</h3>
+            <div class="section-box">
+                <img src="image/icon-1.svg" alt="アイコン" class="section-icon">
+                <p class=".section-box_text">スマホ・PCから、日々の体調管理やトレーニング関連のデータの登録・管理を行えます。<br>選手は日々の体調管理、トレーナーはデータからアプローチが必要な選手を分析することができます。</p>
+            </div>
+            <div class="section-box">
+                <p class=".section-box_text">過去の既往歴や現在の受傷情報の登録・管理を行うことで、よりサポートが必要な選手への素早いアプローチができます。</p>
+                <img src="image/icon-2.svg" alt="アイコン" class="section-icon">
+            </div>
+            <div class="section-box">
+                <img src="image/icon-3.svg" alt="アイコン" class="section-icon">
+                <p class=".section-box_text">全体へのトレーニングメニューの共有や、個別でのトレーニングメニューのデータも管理できます。また目標設定などを行うことで、目標達成へのサポートを行います。</p>
+            </div>
+        </section>
+        <section class="section-wrap align-center">
+            <h3 class="section-title align-center">Athlete</h3>
+            <p class="section-text">アスリートの新規登録・ログインはこちら！</p>
+            <div class="section-box">
+                <a class="btn btn-orn" href="Athlete/login.html">Sing Up</a>
+                <a class="btn btn-blue" href="Athlete/login.html">Login</a>
+            </div>
+        </section>
+        <section class="section-wrap align-center">
+            <h3 class="section-title align-center">Trainer</h3>
+            <p class="section-text">トレーナーの新規登録・ログインはこちら！</p>
+            <div class="section-box align-center">
+                <a class="btn btn-orn" href="Trainer/login.html">Sing Up</a>
+                <a class="btn btn-blue" href="Trainer/login.html">Login</a>
+            </div>
+        </section>
+        <!-- 4 footer作成 -->
+        <footer class="page-footer">
+            <h3 class=""></h3>
+        </footer>
+    </body>
+</html>
