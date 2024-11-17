@@ -1,14 +1,81 @@
 <!DOCTYPE html>
 <html lang="ja">
     <head>
-        <meta charset="utf-8">
+        <meta charset="UTF-8">
         <title>Condition Pro</title>
-        <meta neme="description" content="アスリートの体調管理に関連するデータ・トレーニングデータの管理・分析を行うサービスです。">
-    
-        <!-- 1 meta[charset="UTF-8"]^title{Conditon Pro}^meta[name="description" content="アスリートの体調管理に関連するデータ・トレーニングに関するデータの管理、分析を行うサービスです。"] -->
+        <meta name="description" content="選手は日々の体調管理、トレーナーはデータからアプローチが必要な選手を分析することができます。"> <!-- name属性「description」が抜ける　-->
+        <meta name="viewport" content="width=device-width, initial-scale=1" /> <!-- Viewポートでググる -->
+        <link rel="stylesheet" href="https://unpkg.com/ress/dist/ress.min.css"> <!-- リンクURLが分からなかった -->
+        <link rel="stylesheet" href="CSS/style.css">
     </head>
-
     <body>
-        
+        <!-- header/nav -->
+        <header>
+            <img class="logo" src="practice/image/logo.png" alt="logo">
+            <nav class="main-nav">
+                <ul>
+                    <a href="#athlete-nemu"><li>Athlete</li></a>
+                    <a href="#trainer-nemu"><li>Trainer</li></a>
+                </ul>
+            </nav>
+        </header>
+        <img class="top-img" src="practice/image/top-image.png" alt="top-img">
+        <!-- section -->
+        <div class="section-wrap">
+            <section>
+                <h3 class="section-title align-center">About</h3>
+                <div class="section-box">
+                    <img src="practice/image/icon-1.svg" alt="icon-1">
+                    <p class="section-text">
+                        スマホ・PCから、日々の体調管理やトレーニング関連のデータの登録・管理を行えます。<br>
+                        選手は日々の体調管理、トレーナーはデータからアプローチが必要な選手を分析することができます。
+                    </p>
+                </div>
+                <div class="section-box">
+                    <img src="practice/image/icon-2.svg" alt="icon-2">
+                    <p class="section-text">
+                        過去の既往歴や現在の受傷情報の登録・管理を行うことで、よりサポートが必要な選手への素早いアプローチができます。
+                    </p>
+                </div>
+                <div class="section-box">
+                    <img src="practice/image/icon-3.svg" alt="icon-3">
+                    <p class="section-text">
+                        チーム全体へのトレーニングメニューの共有や、個別でのトレーニングメニューのデータも管理できます。<br>
+                        また目標設定などを行うことで、目標達成へのサポートを行います。
+                    </p>
+                </div>
+            </section>
+            <section class="align-center" id="athlete-nemu">
+                <h3 class="section-title">Athlete</h3>
+                <div class="section-box">
+                    <a class="btn btn-orn text-white" href="">Sing Up</a>
+                    <a class="btn btn-blue text-white" href="">login</a>
+                </div>
+            </section>
+            <section class="align-center" id="trainer-nemu">
+                <h3 class="section-title">Trainer</h3>
+                <div class="section-box">
+                    <a class="btn btn-orn text-white" href="">Sing Up</a>
+                    <a class="btn btn-blue text-white" href="">login</a>
+                </div>
+            </section>
+        </div>
+        <!-- footer -->
+        <footer class="text-white">
+            <h3 class="section-title align-center">Information</h3>
+            <table>
+                <tr>
+                    <td>会社</td>
+                    <td>株式会社〇〇</td>
+                </tr>
+                <tr>
+                    <td>Email</td>
+                    <td>test@test.com</td>
+                </tr>
+            </table>
+            <div class="copyright">
+                <small>&copy;2024 Condetion Pro</small>
+            </div>
+        </footer>
     </body>
 </html>

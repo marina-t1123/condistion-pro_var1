@@ -129,7 +129,7 @@ div.section section:last-child {
 ============================*/
 .page-footer {
     background-color:  #235180;
-    padding: 1rem;
+    padding: 3rem 1rem 4rem 1rem;
 }
 .info {
     width: 100%;
@@ -142,3 +142,12 @@ div.section section:last-child {
 .info td {
     border-bottom: 1px solid #c9c2bc;
 }
+
+/* copyright
+=============================*/
+.copyright {
+    background-color: #FFBD58;
+    padding: 2rem 0;
+    color: #fff;
+}
+

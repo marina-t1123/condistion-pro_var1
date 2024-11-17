@@ -1,0 +1,109 @@
+@charset "UTF-8";
+
+body {
+    font-family: "Hiragino KaKu Gothic ProN", "Hiragino Sans", "BIZ UDPGothic", sans-serif;
+    line-height: 1.7rem;
+    color: #545454; 
+}
+
+header {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.logo {
+    width: 40%;
+}
+
+/* レイアウト(共通クラス)
+============================*/
+.align-center {
+    text-align: center;
+}
+.text-white {
+    color: white;
+}
+
+/* nav
+============================*/
+.main-nav ul{
+    display: flex;
+    gap: 1rem;
+    padding: 1rem;
+    list-style: none;
+}
+.main-nav ul a {
+    text-decoration: none;
+}
+
+/* top-image
+============================*/
+.top-img {
+    width: 100%;
+}
+
+/* section
+============================*/
+div.section-wrap section:last-child { /* 「.section-wrap:last-child」とセレクタを指定してしまい、上手く下線を消せなかった */
+    border-bottom: none;
+}
+section {
+    max-width: 80%;
+    margin: auto;
+    border-bottom: 1px solid #235180;
+}
+.section-box {
+    display: flex;
+    justify-content: center;
+    /* align-items: center; */
+    margin: auto;
+    gap: 1rem;
+    padding: 1rem 0;
+}
+.section-title {
+    font-size: 2rem;
+    padding: 2rem 0;
+}
+.section-box img {
+    width: 20%;
+    padding: 0.5rem;
+    margin-bottom: 1rem;
+}
+.section-text {
+    padding: 1rem;
+    margin-bottom: 1rem;
+}
+
+/* btn
+==============================*/
+.btn {
+    font-size: large;
+    gap: 2rem;
+    width: 30%;
+    padding: 1rem 0.5rem;
+    margin-bottom: 2rem;
+    text-decoration: none;
+    border-radius: 5px;
+}
+.btn-orn {
+    background-color: #ffbd58;
+}
+.btn-blue {
+    background-color: #235180;
+}
+table {
+    margin: auto;
+}
+table tr,td {
+    border-bottom: 1px solid #fff;
+}
+
+/* footer
+==============================*/
+footer {
+    background-color: #235180;
+}
+.copyright {
+    background-color: #ffbd58;
+}
