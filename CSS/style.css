@@ -49,14 +49,13 @@ div.section-wrap section:last-child { /* 「.section-wrap:last-child」とセレ
     border-bottom: none;
 }
 section {
-    max-width: 80%;
+    max-width: 736px; /* max-width: 80%;と指定したが、736pxと練習問題では指定。*/
     margin: auto;
     border-bottom: 1px solid #235180;
 }
 .section-box {
     display: flex;
     justify-content: center;
-    /* align-items: center; */
     margin: auto;
     gap: 1rem;
     padding: 1rem 0;
@@ -65,15 +64,15 @@ section {
     font-size: 2rem;
     padding: 2rem 0;
 }
-.section-box img {
-    width: 20%;
-    padding: 0.5rem;
-    margin-bottom: 1rem;
+.section-icon {
+    width: 15%;
+    margin: 1rem;
 }
 .section-text {
     padding: 1rem;
     margin-bottom: 1rem;
 }
+
 
 /* btn
 ==============================*/
@@ -85,25 +84,40 @@ section {
     margin-bottom: 2rem;
     text-decoration: none;
     border-radius: 5px;
+    transition: .5s; /* ここを0.5ではなく、.5sで0.5秒となる */
 }
 .btn-orn {
     background-color: #ffbd58;
 }
+.btn-orn:hover {
+    background-color: #edaf53;
+}
+
 .btn-blue {
     background-color: #235180;
 }
-table {
-    margin: auto;
+.btn-blue:hover {
+    background-color: #1a3d60;
 }
-table tr,td {
-    border-bottom: 1px solid #fff;
-}
+
 
 /* footer
 ==============================*/
 footer {
     background-color: #235180;
 }
+table {
+    margin: auto;
+    margin-bottom: 2rem;
+    padding: 0.5rem;
+    border-spacing: 0; /* <table> における隣り合うセルの境界同士の間隔を定める */
+    /*　これを指定しないと、th.tdタグの下線が離れて表示されてしまう　*/
+}
+table th,
+table td {
+    border-bottom: 1px solid #fff;
+}
 .copyright {
     background-color: #ffbd58;
+    padding: 1rem;
 }

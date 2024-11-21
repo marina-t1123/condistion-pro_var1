@@ -151,3 +151,33 @@ div.section section:last-child {
     color: #fff;
 }
 
+/* デスクトップ版
+=============================*/
+@media (min-width: 800px) {
+    /* ヘッダー */
+    /* セクション関連 */
+    .section-title {
+        font-size: 45px;
+    }
+    .section-text {
+        font-size: 22px;
+    }
+    .lg-view_section-feature {
+        display: flex;
+        justify-content: center;
+    }
+    .lg-view_section-feature-box {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        flex: 1; /* このスタイルを指定することで、横幅が均等になる。　参考リンク：https://moshashugyo.com/media/flexbox-same-size　　*/
+        margin: 0.5rem; /* 今回は要素を縦並びにしているので、gapプロパティを指定しても、アイコンとテキストの間の数ペースが指定されてしまうので、marginで指定。　*/
+    }
+    .lg-view_section-icon {
+        width: 8rem;
+    }
+    .lg-view_section-text {
+        padding-top: 1rem;
+        text-align: left;
+    }
+}
